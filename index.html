@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certifications</title>
+    <link rel="stylesheet" href="D:\portfilo\certification.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Certifications</h1>
+        <div class="certifications">
+            <div class="card">
+                <img src="C:\Users\aakas\Downloads\1709873099654-certificate (2).png" alt="Full Stack Web Development" class="course-image" onclick="openModal(this)">
+                <p>Full Stack Web Development from EduPrep</p>
+            </div>
+            <div class="card">
+                <img src="C:\Users\aakas\Downloads\WhatsApp Image 2024-09-09 at 5.05.21 PM.jpeg" alt="Backend Development" class="course-image" onclick="openModal(this)">
+                <p>Backend Development with MongoDB and Node.js from MARCELLO TECH</p>
+            </div>
+            <div class="card">
+                <img src="C:\Users\aakas\Downloads\Anton Aakash J _page-0001.jpg" alt="Full Stack Developer Intro" class="course-image" onclick="openModal(this)">
+                <p>Full Stack Developer Introduction Tool Workshop from IMARTICUS LEARNING</p>
+            </div>
+            <div class="card">
+                <img src="C:\Users\aakas\Downloads\WhatsApp Image 2024-09-09 at 5.04.17 PM.jpeg" alt="Python" class="course-image" onclick="openModal(this)">
+                <p>Python from GUVI</p>
+            </div>
+            <div class="card">
+                <img src="C:\Users\aakas\Downloads\LPCertificate_10956_3_213s8_page-0001.jpg" alt="MS Office 365" class="course-image" onclick="openModal(this)">
+                <p>MS Office 365 Beginners Level from Microsoft</p>
+            </div>
+            <div class="card">
+                <img src="C:\Users\aakas\Downloads\WhatsApp Image 2024-09-09 at 4.58.28 PM.jpeg" alt="Python for Machine Learning" class="course-image" onclick="openModal(this)">
+                <p>Python for Machine Learning from Great Learning</p>
+            </div>
+            <div class="card">
+                <img src="C:\Users\aakas\Downloads\ANTON-AAKASH-JOHNSON-D-Participant-Certificate_page-0001.jpg" alt="HTML Training" class="course-image" onclick="openModal(this)">
+                <p>Completion for HTML Training from Spoken Tutorial Project, IIT Bombay</p>
+            </div>
+            <div class="card">
+                <img src="C:\Users\aakas\Downloads\ANTON-AAKASH-JOHNSON-D-Participant-Certificate (1)_page-0001 (1).jpg" alt="PHP and MySQL Training" class="course-image" onclick="openModal(this)">
+                <p>Completion for PHP and MySQL Training from Spoken Tutorial Project, IIT Bombay</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for larger image display -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+
+    <script>
+        function openModal(img) {
+            var modal = document.getElementById("imageModal");
+            var modalImg = document.getElementById("modalImage");
+            var captionText = document.getElementById("caption");
+            modal.style.display = "block";
+            modalImg.src = img.src;
+            captionText.innerHTML = img.alt; // Set caption to the image's alt text
+        }
+
+        function closeModal() {
+            var modal = document.getElementById("imageModal");
+            modal.style.display = "none";
+        }
+    </script>
+</body>
+</html>
